@@ -5,13 +5,13 @@
 
 using namespace std;
 
-int main () {
+int main ()
+ {
   char ch;
   int count=0,  j=0;
   char head[200];
   fstream myfile ("ddl.csv" , ios::in | ios::out);
   fstream op("final.csv" , ios::out | ios::trunc | ios::in);
-  for 
   if (myfile.is_open())
   {int i=0;
      myfile.getline(head, 198, '\n');
@@ -27,10 +27,6 @@ int main () {
       {
       case '\n':
          count++;
-         if (count >500)
-         {
-
-         }
          op<<ch;
 
        
@@ -38,6 +34,7 @@ int main () {
 
        case ';':
        op<<',';
+       
        break;
 
        case '"':

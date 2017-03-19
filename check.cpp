@@ -24,6 +24,7 @@ int main ()
       {
       case '\n':
          count++;
+         cout<<" \n value of count "<<count;
   //       if (count >25)
   
          op0<<ch;
